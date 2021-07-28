@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Collective</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Six+Caps&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <header class="main-head">
+        <nav>
+            <div class="logo">
+                <h1>THE ART COLLECTIVE</h1>
+            </div>
+            <ul class="nav-links">
+                <a href="https://www.behance.net/luisramirez60"><li>Works</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!-- <div class="waterbg"></div> -->
+        <div class="container">
+            <div class="title">
+                <div class="title1">
+                    A Showcase of the Best
+                </div>
+                <div class="title2">
+                    In Modern Art, Love,
+                </div>
+                <div class="title3">
+                    and Life.
+                </div>
+            </div>
+            <P>To Join the adventure just scroll Down</P>
+            <!-- <div class="arrow"><img src="./images/iconmonstr-arrow-down-thin.svg" alt="arrow"></div> -->
+        </div>
+        <div><img class="arrow" src="./images/iconmonstr-arrow-down-thin.svg" alt="arrow"></div>
+        <!-- <div class="cursor"></div> -->
+    </section>
+
+    <div class="img">
+    </div>
+ 
+
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/robin-dela/hover-effect/master/js/hover.min.js"></script>
+    <script src="./hover.js"></script>
+  
+    <script>
+        var myAnimation = new hoverEffect({
+            parent: document.querySelector('.img'),
+            intensity: 0.3,
+            image1: './images/pexels-rfstudio-3817580.jpg',
+            image2: './images/abs.jpg',
+            displacementImage: './images/effect.png'
+        });
+    </script>
+   
+
+</body>
+</html>
