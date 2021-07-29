@@ -38,7 +38,7 @@
                     and Life.
                 </div>
             </div>
-            <P>To Join the adventure just scroll Down</P>
+            <P class="sub-headline">To Join the adventure just scroll Down</P>
             <!-- <div class="arrow"><img src="./images/iconmonstr-arrow-down-thin.svg" alt="arrow"></div> -->
         </div>
         <div><img class="arrow" src="./images/iconmonstr-arrow-down-thin.svg" alt="arrow"></div>
@@ -47,12 +47,39 @@
 
     <div class="img">
     </div>
+<div class="headline-2 transition1">
+    <h2>"Experience a collection like no other <br> Here for one night only"</h2>
+    
+</div>
+
+
+
+<div class="collection">
+    <div class="images transition2">
+    </div>
+
+    <div class="images2 transition3">
+    </div>
+    <div class="images3">
+    </div>
+</div>
+
+
+
+    <!-- <div class="images">
+    </div>
+
+    <div class="images2">
+    </div> -->
  
 
-    <script src="./app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.rawgit.com/robin-dela/hover-effect/master/js/hover.min.js"></script>
+
+    <script src="./app.js"></script>
     <script src="./hover.js"></script>
   
     <script>
@@ -60,9 +87,34 @@
             parent: document.querySelector('.img'),
             intensity: 0.3,
             image1: './images/pexels-rfstudio-3817580.jpg',
-            image2: './images/abs.jpg',
+            image2: './images/abs2.jpg',
             displacementImage: './images/effect.png'
         });
+
+        var myAnimation2 = new hoverEffect({
+            parent: document.querySelector('.images'),
+            intensity: 0.4,
+            image1: './images/art.jpg',
+            image2: './images/taka.jpeg',
+            displacementImage: './images/effect.png'
+        });
+
+        var myAnimation3 = new hoverEffect({
+            parent: document.querySelector('.images2'),
+            intensity: 0.3,
+            image1: './images/dark.jpg',
+            image2: './images/woman.jpg',
+            displacementImage: './images/effect.png'
+        });
+        var myAnimation4 = new hoverEffect({
+            parent: document.querySelector('.images3'),
+            intensity: 0.3,
+            image1: './images/space.jpg',
+            image2: './images/wow.jpg',
+            displacementImage: './images/effect.png'
+        });
+
+
     </script>
    
 
