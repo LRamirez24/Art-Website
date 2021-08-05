@@ -38,10 +38,10 @@
                     and Life.
                 </div>
             </div>
-            <P class="sub-headline">To Join the adventure just scroll Down</P>
+            <P class="sub-headline">Scroll Down</P>
             <!-- <div class="arrow"><img src="./images/iconmonstr-arrow-down-thin.svg" alt="arrow"></div> -->
         </div>
-        <div><img class="arrow" src="./images/iconmonstr-arrow-down-thin.svg" alt="arrow"></div>
+        <div><img class="arrow" src="./images/arrow2.svg" alt="arrow"></div>
         <!-- <div class="cursor"></div> -->
     </section>
 
@@ -53,16 +53,70 @@
 </div>
 
 
-
 <div class="collection">
+  
     <div class="images transition2">
+        <div class="image-title"><a href="#"><h3 class="scene">LA LOVE SCENES</h3></a></div>
     </div>
 
     <div class="images2 transition3">
+        <div class="image-title"><a href="#"><h3 class="scene">NY VIBEZ</h3></a></div>
     </div>
-    <div class="images3">
+    <div class="images3 transition4">
+        <div class="image-title"><a href="#"><h3 class="scene">NY CITY NIGHTS</h3></a></div>
+    </div>
+    <div class="images4 transition5">
+        <div class="image-title"><a href="#"><h3 class="scene">Love is Life</h3></a></div>
     </div>
 </div>
+
+<div class="view-work">
+    <!-- <a href="#">
+        <p class="all-work"> View all Prayers <img class="arrow" src="/images/arrow-right.svg" alt=""></p>
+    </a> -->
+    <a href="#">
+        <button class="btn-more">
+            More +
+        </button>
+    </a>
+</div>
+
+<div class="news">
+<h4>NEWS</h4>
+<div class="dates">
+    <div class="news-line"></div>
+    <div class="dates-section">
+        <p class="transition6">New art collection </p>
+    </div>
+<div class="news-line"></div>
+<div class="dates-section">
+    <p class="transition7">Guest Speakers </p>
+</div>
+<div class="news-line"></div>
+<div class="dates-section">
+    <p class="transition8">A Journey to Remeber</p>
+</div>
+<div class="news-line transition12"></div>
+</div>
+</div>
+
+<!-- <div>
+<h5 class="join-us">JOIN THE MOVEMENT CHOOSE YOUR DAY PASS?</h5>
+</div> -->
+
+<div class="js-ticker transition13">
+    <ul class="wrapper">
+      <li>WANT TO WORK WITH US?</li>
+      <li>JOIN THE MOVEMENT</li>
+    </ul>
+  </div>
+
+  <div>
+      <h2>Love Life</h2>
+  </div>
+
+  
+
 
 
 
@@ -78,6 +132,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.rawgit.com/robin-dela/hover-effect/master/js/hover.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/Draggable.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="./app.js"></script>
     <script src="./hover.js"></script>
@@ -87,7 +144,7 @@
             parent: document.querySelector('.img'),
             intensity: 0.3,
             image1: './images/pexels-rfstudio-3817580.jpg',
-            image2: './images/abs2.jpg',
+            image2: './images/eyes.jpg',
             displacementImage: './images/effect.png'
         });
 
@@ -95,7 +152,7 @@
             parent: document.querySelector('.images'),
             intensity: 0.4,
             image1: './images/art.jpg',
-            image2: './images/taka.jpeg',
+            image2: './images/flow.jpg',
             displacementImage: './images/effect.png'
         });
 
@@ -109,8 +166,15 @@
         var myAnimation4 = new hoverEffect({
             parent: document.querySelector('.images3'),
             intensity: 0.3,
-            image1: './images/space.jpg',
-            image2: './images/wow.jpg',
+            image1: './images/gallery.jpg',
+            image2: './images/tripy.jpg',
+            displacementImage: './images/effect.png'
+        });
+        var myAnimation5 = new hoverEffect({
+            parent: document.querySelector('.images4'),
+            intensity: 0.3,
+            image1: './images/gall.jpg',
+            image2: './images/colors.jpg',
             displacementImage: './images/effect.png'
         });
 
