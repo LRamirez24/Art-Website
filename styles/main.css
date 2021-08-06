@@ -192,6 +192,14 @@ p {
   z-index: 1;
 }
 
+.headline-2 {
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Six Caps', sans-serif;
+  margin-bottom: 4rem;
+  min-height: 50vh;
+}
+
 .collection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,14 +282,6 @@ p {
   margin-bottom: 8rem;
   margin-top: 4rem;
   margin-left: 10rem;
-}
-
-.headline-2 {
-  text-align: center;
-  font-size: 6rem;
-  font-family: 'Six Caps', sans-serif;
-  margin-bottom: 4rem;
-  min-height: 50vh;
 }
 
 .all {
