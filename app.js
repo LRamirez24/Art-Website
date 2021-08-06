@@ -1,5 +1,6 @@
 let mouseCursor = document.querySelector(".cursor");
 let navLinks = document.querySelectorAll(".nav-links li");
+let contact = document.querySelector('.contact');
 
 window.addEventListener('mousemove', cursor);
 
@@ -19,6 +20,10 @@ navLinks.forEach(link => {
         link.classList.add('hovered-link');
     });
 })
+
+
+
+
 
 
 
@@ -60,6 +65,7 @@ gsap.from(".transition1", {
         trigger: ".transition1",
         start: "top center",
         end: "top 100px",
+       
         toggleActions: "restart none reverse none",
     }
 })
@@ -77,27 +83,29 @@ gsap.to(".arrow", {
 
 
 gsap.from(".transition2", {
-    x: 0,
+    x: -100,
     y: 100,
     opacity: 0,
     stagger: 0.8,
-    rotation: -100,
+    rotation: -0,
     scrollTrigger: {
         trigger: ".transition2",
         start: "top center",
+       
         end: "top 100px",
     }
 })
 
 gsap.from(".transition3", {
-    x: 0,
+    x: 200,
     y: 100,
     opacity: 0,
     stagger: 0.8,
-    rotation: -100,
+    rotation: 0,
     scrollTrigger: {
         trigger: ".transition3",
         start: "top center",
+    
         end: "top 100px",
     }
 });
@@ -107,7 +115,7 @@ gsap.from(".transition4", {
     y: 100,
     opacity: 0,
     stagger: 0.8,
-    rotation: 100,
+    rotation: 0,
     scrollTrigger: {
         trigger: ".transition4",
         start: "top center",
@@ -116,18 +124,32 @@ gsap.from(".transition4", {
 });
 
 gsap.from(".transition5", {
-    x: 0,
+    x: -400,
     y: 100,
     opacity: 0,
     stagger: 0.8,
-    rotation: 360,
+    rotation: 0,
     scrollTrigger: {
         trigger: ".transition5",
         start: "top center",
+       
         end: "top 100px",
     }
 });
 
+
+gsap.from(".transitionticker", {
+  x: 0,
+  y: 100,
+  opacity: 0,
+  stagger: 0.8,
+  rotation: 0,
+  scrollTrigger: {
+      trigger: ".transitionticker",
+      start: "top center",
+      end: "top 100px",
+  }
+});
 
 gsap.from(".transition6", {
   x: 0,
@@ -170,6 +192,8 @@ gsap.from(".transition8", {
 });
 
 
+
+
 // const text = document.querySelector(".join-us");
 
 // var boxWidth = text.getBoundingClientRect().width,
@@ -200,7 +224,7 @@ gsap.from(".transition8", {
 // });    
 
 
-const dur = 50;
+const dur = 30;
 
 document.querySelectorAll('.js-ticker .wrapper').forEach(ticker => {
   // Get the initial size of the ticker

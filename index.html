@@ -18,7 +18,7 @@
                 <h1>THE ART COLLECTIVE</h1>
             </div>
             <ul class="nav-links">
-                <a href="https://www.behance.net/luisramirez60"><li>Works</li></a>
+                <a href="#work"><li>Works</li></a>
                 <a href="#"><li>About</li></a>
                 <a href="#"><li>Contact</li></a>
             </ul>
@@ -53,7 +53,7 @@
 </div>
 
 
-<div class="collection">
+<div class="collection" id="work">
   
     <div class="images transition2">
         <div class="image-title"><a href="#"><h3 class="scene">LA LOVE SCENES</h3></a></div>
@@ -62,13 +62,21 @@
     <div class="images2 transition3">
         <div class="image-title"><a href="#"><h3 class="scene">NY VIBEZ</h3></a></div>
     </div>
-    <div class="images3 transition4">
-        <div class="image-title"><a href="#"><h3 class="scene">NY CITY NIGHTS</h3></a></div>
+    <div class="part2">
+        <div class="images3 transition4">
+            <div class="image-title"><a href="#"><h3 class="scene">CITY NIGHTS</h3></a></div>
+        </div>
+        <div class="images4 transition5">
+            <div class="image-title"><a href="#"><h3 class="scene">ART IS LIFE</h3></a></div>
+        </div>
+
     </div>
-    <div class="images4 transition5">
-        <div class="image-title"><a href="#"><h3 class="scene">Love is Life</h3></a></div>
-    </div>
+
 </div>
+
+
+
+
 
 <div class="view-work">
     <!-- <a href="#">
@@ -81,22 +89,41 @@
     </a>
 </div>
 
+
+<div class="js-ticker transitionticker">
+    <ul class="wrapper">
+      <li>WANT TO WORK WITH US?</li>
+      <li>JOIN THE MOVEMENT.</li>
+    </ul>
+  </div>
+
 <div class="news">
 <h4>NEWS</h4>
-<div class="dates">
+<div class="dates transition6">
     <div class="news-line"></div>
     <div class="dates-section">
-        <p class="transition6">New art collection </p>
+       <a href="#">
+        <p class="transition6">New art collection <span> 9-22-2021</span> </p>
+       </a> 
+        <!-- <div><p>hello this is a special day to see.</p></div> -->
     </div>
 <div class="news-line"></div>
 <div class="dates-section">
-    <p class="transition7">Guest Speakers </p>
+    <a href="#">
+        <p class="transition6">Guest Speakers <span> 10-4-2021</span></p>
+    </a>
+   
+    <!-- <div><p>hello this is a special day to see.</p></div> -->
 </div>
 <div class="news-line"></div>
 <div class="dates-section">
-    <p class="transition8">A Journey to Remeber</p>
+    <a href="#">
+        <p class="transition6">A Journey to Remeber <span> 12-11-2021</span></p>
+    </a>
+ 
+    <!-- <div><p>hello this is a special day to see.</p></div> -->
 </div>
-<div class="news-line transition12"></div>
+<div class="news-line"></div>
 </div>
 </div>
 
@@ -104,16 +131,11 @@
 <h5 class="join-us">JOIN THE MOVEMENT CHOOSE YOUR DAY PASS?</h5>
 </div> -->
 
-<div class="js-ticker transition13">
-    <ul class="wrapper">
-      <li>WANT TO WORK WITH US?</li>
-      <li>JOIN THE MOVEMENT</li>
-    </ul>
-  </div>
 
-  <div>
-      <h2>Love Life</h2>
-  </div>
+
+  <div class="contact">
+      <h5>@2021-ART COLLECTIVE</h5>
+  </div> 
 
   
 
@@ -142,7 +164,7 @@
     <script>
         var myAnimation = new hoverEffect({
             parent: document.querySelector('.img'),
-            intensity: 0.3,
+            intensity: 0.5,
             image1: './images/pexels-rfstudio-3817580.jpg',
             image2: './images/eyes.jpg',
             displacementImage: './images/effect.png'
@@ -151,7 +173,7 @@
         var myAnimation2 = new hoverEffect({
             parent: document.querySelector('.images'),
             intensity: 0.4,
-            image1: './images/art.jpg',
+            image1: './images/doggy.jpg',
             image2: './images/flow.jpg',
             displacementImage: './images/effect.png'
         });
@@ -159,14 +181,14 @@
         var myAnimation3 = new hoverEffect({
             parent: document.querySelector('.images2'),
             intensity: 0.3,
-            image1: './images/dark.jpg',
+            image1: './images/bw.jpg',
             image2: './images/woman.jpg',
             displacementImage: './images/effect.png'
         });
         var myAnimation4 = new hoverEffect({
             parent: document.querySelector('.images3'),
             intensity: 0.3,
-            image1: './images/gallery.jpg',
+            image1: './images/art.jpg',
             image2: './images/tripy.jpg',
             displacementImage: './images/effect.png'
         });
