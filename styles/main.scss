@@ -410,11 +410,204 @@ margin-left: 10rem;
 
 /*Media query for small and mid sized phones section  */
 
-// @media only screen and (max-width: 425px) {
-//     .title{
-//         font-size: 4rem;
-//         display: flex;
-//         align-content: center;
-//         justify-content: center;
-//     }
-// }
+@media only screen and (max-width: 425px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .main-head {
+        width: 95%;
+        margin: 0 0 0 auto;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            min-height: 10vh;
+            width: 90%;
+            flex-wrap: wrap;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex: 1 1 10rem;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+    
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            -ms-flex: 1 1 40rem;
+            flex: 1 1 40rem;
+            font-size: 1.6rem;
+        }
+   
+    }
+    
+
+
+    section{
+        // overflow: hidden;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 5%;
+            border-left: 1px solid rgba(255, 255, 255, 0.9);
+            height: 100vh;
+            top: 0;
+        }
+    }
+    .title{
+        font-family: 'Six Caps', sans-serif;
+        font-size: 4rem;
+        line-height: 5.5rem;
+        pointer-events: none;
+        position: relative;
+        z-index: 2;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 10%;
+            height: 3px;
+            background: rgb(255, 255, 255);
+            left: -13%;
+            top: -20%;
+            
+        }
+        .title2, .title3{
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .headline-2{
+        font-size: 3rem;
+    }
+    .img{
+        left: 40%;
+        width: 20rem;
+        height: 30rem;
+        top: 30%;
+    }
+    .sub-headline{
+        font-size: 0.7rem;
+        margin-left: 0.2rem;
+    }
+    .arrow{
+    width: 50px;
+    height: 50px;
+    margin-top: 4rem;
+    margin-left: -26rem;
+    }
+
+    .collection{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        // padding: 4rem;
+        // flex-wrap: wrap;
+        padding-bottom: 4rem;
+        .part2{
+            flex-direction: column;
+        }
+        
+    }
+
+
+.image-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 2rem;
+   
+}
+
+.scene{
+    color: white;
+    &:hover{
+        color: rgb(165, 165, 165);
+    }
+}
+
+.images{
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    width: 35rem;
+height: 45rem;
+z-index: 1;
+margin-right: 0rem;
+margin-bottom: 8rem;
+
+}
+
+.images2{
+   
+    // left: 50%;
+    // transform: translateX(-50%);
+    width: 35rem;
+height: 45rem;
+z-index: 1;
+// padding: 4rem;
+margin-bottom: 4rem;
+}
+
+.images3{
+   
+    // left: 50%;
+    // transform: translateX(-50%);
+    width: 30rem;
+height: 45rem;
+z-index: 1;
+// padding: 4rem;
+margin-bottom: 10rem;
+margin-top: 8rem;
+.scene{
+    text-align: center;
+}
+}
+
+.images4{
+    width: 40rem;
+height: 25rem;
+z-index: 1;
+padding: 4rem;
+margin-bottom: 8rem;
+margin-top: 4rem;
+margin-left: 0rem;
+}
+
+.js-ticker li {
+    list-style: none;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 50px;
+    color: white;
+    font-weight: 300;
+    font-size: 10vw;
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 20rem;
+  font-family: 'Six Caps', sans-serif;
+
+  }
+
+    
+    // .images{
+    //     margin-right: 4rem;
+    //     margin-bottom: 14rem;
+    // }
+    // .images3{
+    //     width: 40rem;
+    //     height: 50rem;
+    // }
+}
